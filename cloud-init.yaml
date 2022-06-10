@@ -1,4 +1,5 @@
-﻿ca_certs:
+#cloud-config
+ca_certs:
   trusted: 
   - |
    -----BEGIN CERTIFICATE-----
