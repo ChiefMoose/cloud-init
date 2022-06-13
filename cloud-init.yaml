@@ -1,6 +1,4 @@
 #cloud-config
-rancher:
-  console: ubuntu
 write_files:
   - path: "/usr/local/share/ca-certificates/Entrust Root Certification Authority.crt"
     content: |
