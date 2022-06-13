@@ -1,6 +1,4 @@
 #cloud-config
-rancher:
-  console: debian
 runcmd:
 - echo "Hello, cloud-init appears to be working!"
 ca_certs:
