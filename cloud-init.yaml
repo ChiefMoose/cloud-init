@@ -1,4 +1,6 @@
 #cloud-config
+rancher:
+  console: ubuntu
 runcmd:
 - echo "Hello, cloud-init appears to be working!"
 ca_certs:
