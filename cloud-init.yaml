@@ -1,4 +1,6 @@
 #cloud-config
+rancher:
+  console: debian
 write_files:
   - path: "/usr/local/shares/ca-certificates/Entrust Root Certification Authority.crt"
     content: |
