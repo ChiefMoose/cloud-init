@@ -1,6 +1,6 @@
 #cloud-config
 rancher:
-  console: debian
+  console: ubuntu
 write_files:
   - path: "/usr/local/share/ca-certificates/Entrust Root Certification Authority.crt"
     content: |
@@ -127,4 +127,4 @@ write_files:
       -----END CERTIFICATE-----
 
 runcmd:
-  - "update-ca-certificates"
+  - "sudo update-ca-certificates"
