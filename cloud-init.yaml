@@ -2,7 +2,7 @@
 rancher:
   console: debian
 write_files:
-  - path: "/usr/local/shares/ca-certificates/Entrust Root Certification Authority.crt"
+  - path: "/usr/local/share/ca-certificates/Entrust Root Certification Authority.crt"
     content: |
       -----BEGIN CERTIFICATE-----
       MIIEkTCCA3mgAwIBAgIERWtQVDANBgkqhkiG9w0BAQUFADCBsDELMAkGA1UEBhMC
@@ -31,7 +31,7 @@ write_files:
       eu6FSqdQgPCnXEqULl8FmTxSQeDNtGPPAUO6nIPcj2A781q0tHuu2guQOHXvgR1m
       0vdXcDazv/wor3ElhVsT/h5/WrQ8
       -----END CERTIFICATE-----
-  - path: "/usr/local/shares/ca-certificates/Entrust Root Certification Authority - G2.crt"
+  - path: "/usr/local/share/ca-certificates/Entrust Root Certification Authority - G2.crt"
     content: |
       -----BEGIN CERTIFICATE-----
       MIIE/zCCA+egAwIBAgIEUdNARDANBgkqhkiG9w0BAQsFADCBsDELMAkGA1UEBhMC
@@ -62,7 +62,7 @@ write_files:
       Zb9n3srMM2XlQZHXN75BGpad5oqXnafOrE6aPb0BoGrZTyIAi0TVaWJ7LuvMuueS
       fWlnPfy4fN5Bh9Bp6roKGHoalUOzeXEodm2h+1dK7E3IDhA=
       -----END CERTIFICATE-----
-  - path: "/usr/local/shares/ca-certificates/New Entrust Root Certification Authority - L1K.crt"
+  - path: "/usr/local/share/ca-certificates/New Entrust Root Certification Authority - L1K.crt"
     content: |
       -----BEGIN CERTIFICATE-----
       MIIFAzCCA+ugAwIBAgIEUdNg7jANBgkqhkiG9w0BAQsFADCBvjELMAkGA1UEBhMC
@@ -93,7 +93,7 @@ write_files:
       B7hlVtWNw6f1sbZlnsCDNn8WRTx0S5OKPPEr9TVwc3vnggSxGJgO1JxvGvz8pzOl
       u7sY82t6XTKH920l5OJ2hiEeEUbNdg5vT6QhcQqEpy02qUgiUX6C
       -----END CERTIFICATE-----
-  - path: "/usr/local/shares/ca-certificates/Old Entrust Root Certification Authority - L1K.crt"
+  - path: "/usr/local/share/ca-certificates/Old Entrust Root Certification Authority - L1K.crt"
     content: |
       -----BEGIN CERTIFICATE-----
       MIIFDjCCA/agAwIBAgIMDulMwwAAAABR03eFMA0GCSqGSIb3DQEBCwUAMIG+MQsw
@@ -127,4 +127,4 @@ write_files:
       -----END CERTIFICATE-----
 
 runcmd:
-  - "sudo update-ca-certificates"
+  - "update-ca-certificates"
